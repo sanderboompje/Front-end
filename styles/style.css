@@ -7,7 +7,10 @@
 	box-sizing: border-box;
 }
 
-
+*{
+	margin: 0;
+	padding: 0;
+}
 
 
 
@@ -46,12 +49,13 @@ header {
 section {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 3em 1em 4em 1em;
+	margin: 3.5em 0.78em 4em 0.78em;
 	border: .0625rem solid #cecece;
 	border-radius: 0.3em;
 	padding-bottom: 2em;
+	gap: 2em;
+	min-height: 25em;
+	display: none;
 }
 
 section img {
@@ -67,7 +71,7 @@ section h2 {
 }
 
 section p {
-	padding: 0 2em 1em 2em;
+	padding: 1.5em 2em 4em 2em;
 }
 
 section a {
@@ -83,4 +87,33 @@ section a {
 
 section:nth-of-type(4) h2{
 	font-size: 1.6em;
+}
+
+section article:last-of-type{
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+section article button{
+	background-color: grey;
+	height: 0.6em;
+	width: 0.6em;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	margin-top: 2em;
+}
+
+section article button:active{
+	background-color: #111;
+}
+
+.active{
+	background-color: #111;
+
+}
+
+.visible {
+	display: flex;
 }

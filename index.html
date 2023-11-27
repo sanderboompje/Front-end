@@ -14,15 +14,24 @@
 
 <body>
 	<header></header>
-	<section>
+	<main>
+	<section id="section1" class="visible">
 		<img src="images\Homestyle_Burger.png" alt="burger">
 		<article>
 			<h2>Een moment voor jezelf?</h2>
 			<p>Ga voor een heerlijk feestmaal ! Probeer bijvoorbeeld de Homestyle Crispy Chicken Old Amsterdam.</p>
 			<a href="#">Kom 'm proeven</a>
 		</article>
+		<article>
+			<button class="active" onclick="showSection(1)"></button>
+			<button onclick="showSection(2)"></button>
+			<button onclick="showSection(3)"></button>
+			<button onclick="showSection(4)"></button>
+			<button onclick="showSection(5)"></button>
+			<button onclick="showSection(6)"></button>
+		</article>
 	</section>
-	<section>
+	<section id="section2">
 		<img src="images/werker.png" alt="vers bereid">
 		<article>
 			<h2>Vers voor jou bereid</h2>
@@ -30,8 +39,16 @@
 				want dat is helemaal niet nodig. Bij McDonald's wordt elke bestelling vers voor jou bereid!</p>
 			<a href="#">Meer weten?</a>
 		</article>
+		<article>
+			<button onclick="showSection(1)"></button>
+			<button class="active" onclick="showSection(2)"></button>
+			<button onclick="showSection(3)"></button>
+			<button onclick="showSection(4)"></button>
+			<button onclick="showSection(5)"></button>
+			<button onclick="showSection(6)"></button>
+		</article>
 	</section>
-	<section>
+	<section id="section3">
 		<img src="images/Happy_Meal.jpg" alt="Happy meal">
 		<article>
 			<h2>Happy Meal</h2>
@@ -40,24 +57,48 @@
 			</p>
 			<a href="#">Ontdek meer</a>
 		</article>
+		<article>
+			<button onclick="showSection(1)"></button>
+			<button onclick="showSection(2)"></button>
+			<button class="active" onclick="showSection(3)"></button>
+			<button onclick="showSection(4)"></button>
+			<button onclick="showSection(5)"></button>
+			<button onclick="showSection(6)"></button>
+		</article>
 	</section>
-	<section>
+	<section id="section4">
 		<img src="images/MyOrder.jpg" alt="online bestellen">
 		<article>
 			<h2>Lekker handig bestellen</h2>
 			<p>Nieuw! MyOrder in de App. Nu als pilot bij 10 restaurants.</p>
 			<a href="#">Ontdek meer</a>
 		</article>
+		<article>
+			<button onclick="showSection(1)"></button>
+			<button onclick="showSection(2)"></button>
+			<button onclick="showSection(3)"></button>
+			<button class="active" onclick="showSection(4)"></button>
+			<button onclick="showSection(5)"></button>
+			<button onclick="showSection(6)"></button>
+		</article>
 	</section>
-	<section>
+	<section id="section5">
 		<img src="images/Werken_bij_mc.png" alt="Werken bij McDonald's">
 		<article>
 			<h2>Dat is lekker werken</h2>
 			<p>Ontdek meer over werken bij McDonald's.</p>
 			<a href="#">Meer info</a>
 		</article>
+		<article>
+			<button onclick="showSection(1)"></button>
+			<button onclick="showSection(2)"></button>
+			<button onclick="showSection(3)"></button>
+			<button onclick="showSection(4)"></button>
+			<button class="active" onclick="showSection(5)"></button>
+			<button onclick="showSection(6)"></button>
+		</article>
 	</section>
-	<section>
+	<section id="section6">
 		<img src="images/Bekers.png" alt="Nieuwe bekers">
 		<article>
 			<h2>Even wennen</h2>
@@ -65,7 +106,16 @@
 				plastic toeslag, dan mag die gewoon in de afvalbak</p>
 			<a href="#">Ontdek meer</a>
 		</article>
+		<article>
+			<button onclick="showSection(1)"></button>
+			<button onclick="showSection(2)"></button>
+			<button onclick="showSection(3)"></button>
+			<button onclick="showSection(4)"></button>
+			<button onclick="showSection(5)"></button>
+			<button class="active" onclick="showSection(6)"></button>
+		</article>
 	</section>
+
 	<article>
 		<!-- Insert image -->
 		<h3>MyMcDonald's App</h3>
@@ -124,6 +174,7 @@
 			<li>Cookies</li>
 			<li>© Copyright © 2022 McDonald's Nederland.</li>
 		</ul>
+	</main>
 	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>

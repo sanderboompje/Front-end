@@ -1,4 +1,5 @@
-/**************/
+************
+
 /* CSS REMEDY */
 /**************/
 *,
@@ -7,7 +8,7 @@
 	box-sizing: border-box;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -35,17 +36,18 @@
 /* jouw code */
 body {
 	margin: 0;
-    font-family: Speedee;
-    font-size: 14px;
-    line-height: 24px;
-    color: #292929;
-    letter-spacing: -.15px;
+	font-family: Speedee;
+	font-size: 14px;
+	line-height: 24px;
+	color: #292929;
+	letter-spacing: -.15px;
 }
 
 header {
 	height: 48px;
 	box-shadow: 0 0.1px 4px 0 #cecece;
 }
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -66,9 +68,10 @@ section img {
 }
 
 section h2 {
-	padding-left: 1.1em;
+	padding-left: 0.9em;
 	font-size: 2em;
 	font-weight: bolder;
+	width: 8.5em;
 }
 
 section p {
@@ -77,17 +80,17 @@ section p {
 
 section a {
 	background-color: #ffbc0d;
-    border-radius: 4px;
-    padding: 9pt 13px;
-    display: inline-flex;
-    line-height: 24px;
-    color: #292929;
-    text-decoration: none;
-    margin: 0 29px 0 1.8em;
+	border-radius: 4px;
+	padding: 9pt 13px;
+	display: inline-flex;
+	line-height: 24px;
+	color: #292929;
+	text-decoration: none;
+	margin: 0 29px 0 1.8em;
 }
 
 
-section article:last-of-type{
+section article:last-of-type {
 	display: flex;
 	justify-content: center;
 	gap: 1em;
@@ -96,7 +99,7 @@ section article:last-of-type{
 	left: 3em;
 }
 
-section article button{
+section article button {
 	background-color: grey;
 	height: 0.6em;
 	width: 0.6em;
@@ -106,37 +109,144 @@ section article button{
 	margin-top: 2em;
 }
 
-section article button:first-of-type, section article button:last-of-type{
+section article button:first-of-type,
+section article button:last-of-type {
 	background-color: white;
 
-    transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
 section article button:last-of-type span {
 	display: block;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid grey;
-    border-right: 2px solid grey;
-    transform: rotate(-45deg);
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid grey;
+	border-right: 2px solid grey;
+	transform: rotate(-45deg);
 	left: 0;
 }
 
 section article button:first-of-type span {
 	display: block;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid grey;
-    border-right: 2px solid grey;
-    transform: rotate(135deg);
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid grey;
+	border-right: 2px solid grey;
+	transform: rotate(135deg);
 	right: 0;
 }
 
-.active{
+.active {
 	background-color: #111;
 
 }
 
 .visible {
 	display: flex;
+}
+
+main>article {
+	display: flex;
+	flex-direction: column;
+	margin: 3.5em 0.78em 0 0.78em;
+	gap: 1em;
+	height: 32em;
+	position: relative;
+}
+
+main>article img {
+	width: 100%;
+	margin: 0;
+}
+
+main>article h3 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	padding-left: 0.5em;
+}
+
+main>article p {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 24px;
+	padding: 0.6em;
+}
+
+main>article a {
+	background-color: #ffbc0d;
+	border-radius: 4px;
+	padding: 9pt 13px;
+	line-height: 24px;
+	color: #292929;
+	text-decoration: none;
+	margin: 0 29px 0 0.55em;
+	width: 8em;
+	text-align: center;
+}
+
+main>article:nth-of-type(6) {
+	border: .0625rem solid #cecece;
+	border-radius: 0.3em;
+	height: 28em;
+	margin-top: 10em;
+}
+
+main>article:nth-of-type(6) img {
+	border-radius: 0.2em 0.2em 0 0;
+}
+
+main>article:nth-of-type(6) h2 {
+	padding-left: 0.9em;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+main>article:nth-of-type(6) p {
+	padding-left: 2em;
+}
+
+main>article:nth-of-type(6) a {
+	margin-left: 2em;
+	width: 5em;
+	padding: 0.8em 0.75em;
+}
+
+main>article a {
+	background-color: #ffbc0d;
+	border-radius: 4px;
+	padding: 9pt 13px;
+	line-height: 24px;
+	color: #292929;
+	text-decoration: none;
+	margin: 0 29px 0 0.55em;
+	width: 8em;
+	text-align: center;
+}
+
+main>article:nth-of-type(7) {
+	border: .0625rem solid #cecece;
+	border-radius: 0.3em;
+	height: 30em;
+	margin-top: 1em;
+}
+
+main>article:nth-of-type(7) img {
+	border-radius: 0.2em 0.2em 0 0;
+}
+
+main>article:nth-of-type(7) h2 {
+	padding-left: 0.9em;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+main>article:nth-of-type(7) p {
+	padding-left: 2em;
+}
+
+main>article:nth-of-type(7) a {
+	margin-left: 2em;
+	width: 7em;
+	padding: 0.8em 0.75em;
 }

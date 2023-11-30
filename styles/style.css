@@ -106,8 +106,30 @@ section article button{
 	margin-top: 2em;
 }
 
-section article button:active{
-	background-color: #111;
+section article button:first-of-type, section article button:last-of-type{
+	background-color: white;
+
+    transform: translate(-50%,-50%);
+}
+
+section article button:last-of-type span {
+	display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    transform: rotate(-45deg);
+	left: 0;
+}
+
+section article button:first-of-type span {
+	display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    transform: rotate(135deg);
+	right: 0;
 }
 
 .active{
